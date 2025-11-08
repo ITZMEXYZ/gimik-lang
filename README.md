@@ -1,4 +1,4 @@
 # gimik-lang
 portfolio group 11 prototype
-# full Demo View in
+# FULL DEMO VIEW IN:
 https://xyz1111-yj5w.vercel.app/
