@@ -27,7 +27,7 @@ def members_contact():
             "links": {
                 "facebook": "https://www.facebook.com/mrkchrstnsbcj",
                 "email": "https://www.facebook.com/mrkchrstnsbcj",
-                "github": "https://www.facebook.com/mrkchrstnsbcj",
+                "github": "https://github.com/nug3tsss",
             }
         },
         {
@@ -45,43 +45,43 @@ def members_contact():
             "links": {
                 "facebook": "https://www.facebook.com/cee.the.lin.e",
                 "email": "https://youtube.com/@zybanezz",
-                "github": "https://tiktok.com/@zybanezz",
+                "github": "https://github.com/ceetheline",
             }
         },
         {
             "name": "John Luke Fabillan",
             "image": "static/images/pic_3.png",
             "links": {
-                "facebook": "https://facebook.com/zybanezz",
+                "facebook": "https://www.facebook.com/johnluke.fabillan",
                 "email": "https://youtube.com/@zybanezz",
-                "github": "https://tiktok.com/@zybanezz",
+                "github": "https://github.com/JLFabillan",
             }
         },
         {
             "name": "Princess Sophia Manalo",
             "image": "static/images/pic_4.png",
             "links": {
-                "facebook": "https://facebook.com/zybanezz",
+                "facebook": "https://www.facebook.com/soapymk",
                 "email": "https://youtube.com/@zybanezz",
-                "github": "https://tiktok.com/@zybanezz",
+                "github": "https://github.com/Sophia18",
             }
         },
         {
             "name": "Isaac Christian Pelingen",
             "image": "static/images/pic_5.png",
             "links": {
-                "facebook": "https://facebook.com/zybanezz",
+                "facebook": "https://www.facebook.com/isaac.christian.pelingen",
                 "email": "https://youtube.com/@zybanezz",
-                "github": "https://tiktok.com/@zybanezz",
+                "github": "https://github.com/xiin112",
             }
         },
         {
             "name": "Gian Carlos Tumanan",
             "image": "static/images/pic_6.png",
             "links": {
-                "facebook": "https://facebook.com/zybanezz",
+                "facebook": "https://www.facebook.com/giancarlos.tumanan",
                 "email": "https://youtube.com/@zybanezz",
-                "github": "https://tiktok.com/@zybanezz",
+                "github": "https://github.com/GIANT0808",
             }
         }
     ]
