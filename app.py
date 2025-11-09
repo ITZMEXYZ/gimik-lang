@@ -67,9 +67,9 @@ def members_contact():
             "name": "Princess Sophia Manalo",
             "image": "static/images/sophia.jpg",
             "links": {
-                "facebook": "https://www.facebook.com/soapymk/"
-                "email": "mailto:manaloprincesssophia@gmail.com"
-                "github": "https://github.com/S0PHIA18"
+                "facebook": "https://www.facebook.com/soapymk/",
+                "email": "mailto:manaloprincesssophia@gmail.com",
+                "github": "https://github.com/S0PHIA18",
         }
     }, 
     {
