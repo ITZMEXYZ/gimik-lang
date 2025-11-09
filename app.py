@@ -90,12 +90,46 @@ def members_contact():
     ]
     return render_template("contacts.html", people=people)
 
-# Queue Visualizer page
+# Queue visualizer page
 @app.route('/works/queue-visualizer', methods=['GET', 'POST'])
 def queue_visualizer():
-    return render_template('queuevisualizer.html')
+    if request.method == "POST":
+        value = request.form.get("value")
 
-# DeQueue Visualizer page
+        if "enqueue" in request.form:
+            queue_structure.enqueue(value)
+        elif "dequeue" in request.form:
+            queue_structure.dequeue()
+
+    if request.args.get("dequeue"):
+        queue_structure.dequeue()
+
+    return render_template(
+        "queuevisualizer.html",
+        items=queue_structure.get_items(),
+        active_page="works"
+    )
+
+# DeQueue visualizer page
 @app.route('/works/dequeue-visualizer', methods=['GET', 'POST'])
 def dequeue_visualizer():
-    return render_template('dequeuevisualizer.html')
+    if request.method == "POST":
+        action = request.form.get("action")
+
+        if action == "left":  # Insert Left
+            value = request.form.get("value")
+            if value:
+                deque_structure.insert_left(value)
+        elif action == "right": 
+            value = request.form.get("value")
+            if value:
+                deque_structure.insert_right(value)
+        elif action == "remove_left":
+            deque_structure.remove_left()
+        elif action == "remove_right":
+            deque_structure.remove_right()
+
+    return render_template(
+        "dequeuevisualizer.html",
+        items=deque_structure.get_items(),
+        active_page="works")
