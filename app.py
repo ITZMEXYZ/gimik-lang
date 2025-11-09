@@ -20,74 +20,80 @@ def index():
 def works():
     return render_template('works.html', active_page='works')
 
-# Members / Contact page
+# Profile and Contact page
 @app.route('/contacts')
 def members_contact():
     people = [
-        {
-            "name": "Mark Christian Abucejo",
-            "image": "static/images/pic_1.png",
-            "links": {
+    {
+        "name": "Mark Christian Abucejo",
+        "image": "static/images/members/mark.jpg",
+        "links": {
                 "facebook": "https://www.facebook.com/mrkchrstnsbcj",
-                "email": "https://www.facebook.com/mrkchrstnsbcj",
+                "email": "mailto:abucejomark11905@gmail.com",
                 "github": "https://github.com/nug3tsss",
             }
-        },
-        {
-            "name": "Zy Banez",
-            "image": "static/images/zy.jpg",
-            "links": {
+    },
+    {
+        "name": "Zy Banez",
+        "image": "static/images/members/zy.jpg",
+        "links": {
                 "facebook": "https://www.facebook.com/zyescote.banez.5",
-                "email": "zyescotebanez@gmail.com",
+                "email": "mailto:zyescotebanez@gmail.com",
                 "github": "https://github.com/ITZMEXYZ",
             }
-        },
-        {
+    }, 
+    {
+        
             "name": "Kyle Isaac Celin",
-            "image": "static/images/pic_2.png",
+            "image": "static/images/members/pic_2.png",
             "links": {
                 "facebook": "https://www.facebook.com/cee.the.lin.e",
-                "email": "https://youtube.com/@zybanezz",
-                "github": "https://github.com/ceetheline",
-            }
-        },
-        {
-            "name": "John Luke Fabillan",
-            "image": "static/images/pic_3.png",
-            "links": {
-                "facebook": "https://www.facebook.com/johnluke.fabillan",
-                "email": "https://youtube.com/@zybanezz",
-                "github": "https://github.com/JLFabillan",
-            }
-        },
-        {
-            "name": "Princess Sophia Manalo",
-            "image": "static/images/pic_4.png",
-            "links": {
-                "facebook": "https://www.facebook.com/soapymk",
-                "email": "https://youtube.com/@zybanezz",
-                "github": "https://github.com/Sophia18",
-            }
-        },
-        {
-            "name": "Isaac Christian Pelingen",
-            "image": "static/images/pic_5.png",
-            "links": {
-                "facebook": "https://www.facebook.com/isaac.christian.pelingen",
-                "email": "https://youtube.com/@zybanezz",
-                "github": "https://github.com/xiin112",
-            }
-        },
-        {
-            "name": "Gian Carlos Tumanan",
-            "image": "static/images/pic_6.png",
-            "links": {
-                "facebook": "https://www.facebook.com/giancarlos.tumanan",
-                "email": "https://youtube.com/@zybanezz",
-                "github": "https://github.com/GIANT0808",
-            }
+                "email": "https://youtube.com/@zybanezz",#need update
+                "github": "https://tiktok.com/@zybanezz",#need update
         }
+    }, 
+    {
+        
+            "name": "John Luke Fabillan",
+            "image": "static/images/members/jl.jpg",
+            "links": {
+                "facebook": "https://facebook.com/johnluke.fabillan",
+                "email": "mailto:jlfabillan@gmail.com",
+                "github": "https://github.com/JLFabillan",
+        }
+    }, 
+    {
+        
+            "name": "Princess Sophia Manalo",
+            "image": "static/images/members/sophia.jpg",
+            "links": {
+                "facebook": "https://www.facebook.com/soapymk/"
+                "email": "mailto:manaloprincesssophia@gmail.com"
+                "github": "https://github.com/S0PHIA18"
+        }
+    }, 
+    {
+        
+            "name": "Isaac Christian Pelingen",
+            "image": "static/images/members/isaac.jpg",
+            "links": {
+                "facebook": "https://www.facebook.com/share/1FmtJqYkC4/",
+                "email": "mailto:pelingenisaac@gmail.com",
+                "github": "https://github.com/xiin112",
+        }
+    }, 
+    {
+        
+            "name": "Gian Carlos Tumanan",
+            "image": "static/images/members/pic_6.png",
+            "links": {
+                "facebook": "https://facebook.com/zybanezz",#need update
+                "email": "https://youtube.com/@zybanezz",#need update
+                "github": "https://tiktok.com/@zybanezz",#need update
+        }
+    }
     ]
+    
     return render_template("contacts.html", people=people)
 
 # Queue visualizer page
