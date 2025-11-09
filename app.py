@@ -49,7 +49,7 @@ def members_contact():
             "links": {
                 "facebook": "https://www.facebook.com/cee.the.lin.e",
                 "email": "https://youtube.com/@zybanezz",#need update
-                "github": "https://tiktok.com/@zybanezz",#need update
+                "github": "https://github.com/ceetheline",#need update
         }
     }, 
     {
@@ -89,7 +89,7 @@ def members_contact():
             "links": {
                 "facebook": "https://facebook.com/zybanezz",#need update
                 "email": "https://youtube.com/@zybanezz",#need update
-                "github": "https://tiktok.com/@zybanezz",#need update
+                "github": "https://github.com/GIANT0808",#need update
         }
     }
     ]
