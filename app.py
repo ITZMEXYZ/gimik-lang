@@ -26,7 +26,7 @@ def members_contact():
     people = [
     {
         "name": "Mark Christian Abucejo",
-        "image": "static/images/members/mark.jpg",
+        "image": "static/images/mark.jpg",
         "links": {
                 "facebook": "https://www.facebook.com/mrkchrstnsbcj",
                 "email": "mailto:abucejomark11905@gmail.com",
@@ -35,7 +35,7 @@ def members_contact():
     },
     {
         "name": "Zy Banez",
-        "image": "static/images/members/zy.jpg",
+        "image": "static/images/zy.jpg",
         "links": {
                 "facebook": "https://www.facebook.com/zyescote.banez.5",
                 "email": "mailto:zyescotebanez@gmail.com",
@@ -45,7 +45,7 @@ def members_contact():
     {
         
             "name": "Kyle Isaac Celin",
-            "image": "static/images/members/pic_2.png",
+            "image": "static/images/pic_2.png",
             "links": {
                 "facebook": "https://www.facebook.com/cee.the.lin.e",
                 "email": "https://youtube.com/@zybanezz",#need update
@@ -55,7 +55,7 @@ def members_contact():
     {
         
             "name": "John Luke Fabillan",
-            "image": "static/images/members/jl.jpg",
+            "image": "static/images/jl.jpg",
             "links": {
                 "facebook": "https://facebook.com/johnluke.fabillan",
                 "email": "mailto:jlfabillan@gmail.com",
@@ -65,7 +65,7 @@ def members_contact():
     {
         
             "name": "Princess Sophia Manalo",
-            "image": "static/images/members/sophia.jpg",
+            "image": "static/images/sophia.jpg",
             "links": {
                 "facebook": "https://www.facebook.com/soapymk/"
                 "email": "mailto:manaloprincesssophia@gmail.com"
@@ -75,7 +75,7 @@ def members_contact():
     {
         
             "name": "Isaac Christian Pelingen",
-            "image": "static/images/members/isaac.jpg",
+            "image": "static/images/isaac.jpg",
             "links": {
                 "facebook": "https://www.facebook.com/share/1FmtJqYkC4/",
                 "email": "mailto:pelingenisaac@gmail.com",
@@ -85,7 +85,7 @@ def members_contact():
     {
         
             "name": "Gian Carlos Tumanan",
-            "image": "static/images/members/pic_6.png",
+            "image": "static/images/pic_6.png",
             "links": {
                 "facebook": "https://facebook.com/zybanezz",#need update
                 "email": "https://youtube.com/@zybanezz",#need update
