@@ -1,19 +1,16 @@
-{% extends "base.html" %}
+{% extends "_base.html" %}
 
 {% block title %}Works{% endblock %}
 
 {% block content %}
 
 <section id="works-page">
+    <h1></h1>
     <h1>Our Programming Projects</h1>
 
     <div class="work-buttons">
-        <a href="{{ url_for('queue_visualizer') }}"><button class="work-btn">Queue Visualizer</button></a>
-        <a href="{{ url_for('dequeue_visualizer') }}"><button class="work-btn">Dequeue Visualizer</button></a>
-        <a href="/Project3"><button class="work-btn">Project 3</button></a>
-        <a href="/Project4"><button class="work-btn">Project 4</button></a>
-        <a href="/Project5"><button class="work-btn">Project 5</button></a>
+        <a href="/works/queue-visualizer"><button class="work-btn">Queue Visualizer</button></a>
+        <a href="/works/dequeue-visualizer"><button class="work-btn">Dequeue Visualizer</button></a>
     </div>
 </section>
-
 {% endblock %}
