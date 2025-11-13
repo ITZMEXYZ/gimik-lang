@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "JetBrainsMono Nerd Font", monospace;
   color: white;
   background: transparent;
 }
@@ -80,10 +80,9 @@ nav ul {
 .section {
   padding: 50px 20px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
-  border-radius: 6px;
-  margin: 20px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(3px);
+  margin: 10px;
 }
 
 /* Members Page */
@@ -179,6 +178,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 
 .work-btn:hover {
@@ -225,6 +225,7 @@ a {
     transform: scale(1.02);
 }
 
+/* INPUT CONTAINER */
 .input-container {
     display: flex;
     justify-content: center;
@@ -247,6 +248,7 @@ a {
     box-shadow: 0 0 10px #00e1ff;
 }
 
+/* Center button container */
 .button-container {
     display: flex;
     justify-content: center;
@@ -254,6 +256,7 @@ a {
     margin-top: 10px;
 }
 
+/* Button style */
 .btn-glow {
     padding: 10px 18px;
     font-size: 14px;
@@ -267,6 +270,7 @@ a {
     box-shadow: 0 0 8px #0000008a;
 }
 
+/* Hover glow effect */
 .btn-glow:hover {
     background: #00e1ff;
     color: #000000;
@@ -274,6 +278,7 @@ a {
     transform: scale(1.05);
 }
 
+/* Active click effect */
 .btn-glow:active {
     transform: scale(0.95);
     box-shadow: 0 0 5px #ffffff;
@@ -290,6 +295,7 @@ a {
     margin-top: 25px;
 }
 
+/* INDIVIDUAL BOX WITH ANIMATION */
 .queue-box {
     background: linear-gradient(135deg, rgba(0,255,255,0.35), rgba(0,0,0,0.6));
     padding: 16px 22px;
@@ -303,12 +309,13 @@ a {
     animation: fadeInScale 0.35s ease;
 }
 
+/* Hover effect */
 .queue-box:hover {
     transform: translateY(-6px) scale(1.12);
     box-shadow: 0 0 28px #00eaff;
 }
 
-
+/* Animation on append */
 @keyframes fadeInScale {
     from { opacity: 0; transform: scale(0.6); }
     to   { opacity: 1; transform: scale(1); }
@@ -368,7 +375,7 @@ a {
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 12px; /* spacing between buttons */
     margin-bottom: 20px;
 }
 
