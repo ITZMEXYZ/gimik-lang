@@ -1,24 +1,30 @@
-from flask import Flask, render_template, request,redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for
 import os
 from modules.queue import Queue
 from modules.dequeue import DeQueue
 
 app = Flask(__name__)
 
-# Home page
+queue_structure = Queue()
+deque_structure = DeQueue()
+
 @app.route('/')
+def home_redirect():
+    return redirect(url_for('index'))
+
+# Home page
 @app.route('/home')
 def index():
     index_data = {
         "message": "GROUP 11",
-        "message_1": "Hello everyone we are the Group 11 and this is our Group Portfolio project in DSA"
+        "message_1": "Hello everyone we are the Group 11 and this is our Group Portfolio project in DSA."
     }
     return render_template('home.html', index=index_data, active_page='home')
 
-# Projects page
-@app.route('/works', methods=['GET', 'POST'])
+# Project page
+@app.route('/works')
 def works():
-    return render_template('works.html', active_page='works')
+    return render_template('works.html',  active_page='works')
 
 # Profile and Contact page
 @app.route('/contacts')
@@ -45,11 +51,11 @@ def members_contact():
     {
         
             "name": "Kyle Isaac Celin",
-            "image": "static/images/pic_2.png",
+            "image": "static/images/kyle.png",
             "links": {
                 "facebook": "https://www.facebook.com/cee.the.lin.e",
-                "email": "https://youtube.com/@zybanezz",#need update
-                "github": "https://github.com/ceetheline",#need update
+                "email": "mailto:celinkyleisaac@gmail.com",
+                "github": "https://github.com/ceetheline",
         }
     }, 
     {
@@ -89,12 +95,13 @@ def members_contact():
             "links": {
                 "facebook": "https://facebook.com/zybanezz",#need update
                 "email": "https://youtube.com/@zybanezz",#need update
-                "github": "https://github.com/GIANT0808",#need update
+                "github": "https://tiktok.com/@zybanezz",#need update
         }
     }
     ]
     
     return render_template("contacts.html", people=people)
+
 
 # Queue visualizer page
 @app.route('/works/queue-visualizer', methods=['GET', 'POST'])
@@ -139,3 +146,8 @@ def dequeue_visualizer():
         "dequeuevisualizer.html",
         items=deque_structure.get_items(),
         active_page="works")
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
