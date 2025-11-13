@@ -147,7 +147,3 @@ def dequeue_visualizer():
         items=deque_structure.get_items(),
         active_page="works")
 
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port, debug=True)
